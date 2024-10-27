@@ -151,7 +151,7 @@
             var fullCountDown = createElements(parameters, countdown);
 
             var refresh = function () {
-                now = (new Date()).getUTCDate();
+                now = new Date();
                 console.log('Target Date:', targetDate);  // Debugging log for the target date
                 console.log('Now:', now);                 // Debugging log for current date/time
                 
