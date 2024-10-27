@@ -134,7 +134,7 @@
             seconds;
 
         var cd = document.querySelectorAll(elt);
-        var targetTmpDate = new Date(parameters.year, parameters.month-2, parameters.day, parameters.hours, parameters.minutes, parameters.seconds,0);
+        var targetTmpDate = new Date(parameters.year, 8, parameters.day, parameters.hours, parameters.minutes, parameters.seconds,0);
 
         targetDate = targetTmpDate;
 
