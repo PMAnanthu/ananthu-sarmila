@@ -115,7 +115,7 @@
                 },
                 plural: true,
                 inline: false,
-                enableUtc: true,
+                enableUtc: false,
                 onEnd: function () {},
                 refresh: 1000,
                 inlineClass: 'simply-countdown-inline',
