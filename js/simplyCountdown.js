@@ -103,8 +103,8 @@
                 year: 2024,
                 month: 10,
                 day: 30,
-                hours: 9,
-                minutes: 0,
+                hours: 3,
+                minutes: 30,
                 seconds: 0,
                 words: {
                     days: 'day',
@@ -151,7 +151,7 @@
             var fullCountDown = createElements(parameters, countdown);
 
             var refresh = function () {
-                now = new Date();
+                now = (new Date()).getUTCDate();
                 console.log('Target Date:', targetDate);  // Debugging log for the target date
                 console.log('Now:', now);                 // Debugging log for current date/time
                 
