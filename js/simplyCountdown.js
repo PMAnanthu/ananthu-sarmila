@@ -138,12 +138,12 @@
 
         targetDate = parameters.enableUtc
             ? new Date(
-                  targetTmpDate.getUTCFullYear(),
-                  targetTmpDate.getUTCMonth(),
-                  targetTmpDate.getUTCDate(),
-                  targetTmpDate.getUTCHours(),
-                  targetTmpDate.getUTCMinutes(),
-                  targetTmpDate.getUTCSeconds()
+                  2024,
+                  10,
+                  30,
+                  3,
+                  30,
+                  0
               )
             : targetTmpDate;
 
