@@ -115,7 +115,7 @@
                 },
                 plural: true,
                 inline: false,
-                enableUtc: false,
+                enableUtc: true,
                 onEnd: function () {},
                 refresh: 1000,
                 inlineClass: 'simply-countdown-inline',
@@ -136,16 +136,7 @@
         var cd = document.querySelectorAll(elt);
         var targetTmpDate = new Date(parameters.year, parameters.month-2, parameters.day, parameters.hours, parameters.minutes, parameters.seconds);
 
-        targetDate = parameters.enableUtc
-            ? new Date(
-                  2024,
-                  10,
-                  30,
-                  3,
-                  30,
-                  0
-              )
-            : targetTmpDate;
+        targetDate = targetTmpDate;
 
         Array.prototype.forEach.call(cd, function (countdown) {
             var fullCountDown = createElements(parameters, countdown);
