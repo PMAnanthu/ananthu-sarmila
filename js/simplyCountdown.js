@@ -159,9 +159,15 @@
                     minutes = Math.floor(secondsLeft / 60);
                     seconds = Math.floor(secondsLeft % 60);
                 } else {
-                    days = hours = minutes = seconds = 0;
-                    window.clearInterval(interval);
-                    parameters.onEnd();
+                    secondsLeft = ( now.getTime() - targetDate.getTime()) / 1000;
+                    days = Math.floor(secondsLeft / 86400);
+                    secondsLeft %= 86400;
+            
+                    hours = Math.floor(secondsLeft / 3600);
+                    secondsLeft %= 3600;
+            
+                    minutes = Math.floor(secondsLeft / 60);
+                    seconds = Math.floor(secondsLeft % 60);
                 }
             
                 console.log('Days left:', days);  // Debugging log for days left
