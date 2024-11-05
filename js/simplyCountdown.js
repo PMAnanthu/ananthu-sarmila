@@ -134,7 +134,7 @@
             seconds;
 
         var cd = document.querySelectorAll(elt);
-        var targetTmpDate = new Date("October 30, 2024 3:30:00");
+        var targetTmpDate = new Date("October 30, 2024 9:00:00");
         //new Date(parameters.year, 8, parameters.day, parameters.hours, parameters.minutes, parameters.seconds,0);
 
         targetDate = targetTmpDate;
